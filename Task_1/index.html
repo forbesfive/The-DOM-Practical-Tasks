@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script defer src="../Task_2/app.js"></script> -->
+    <!-- <script defer src="../Task_3/app.js"></script> -->
+    <!-- <script defer src="../Task_4/app.js"></script> -->
+    <!-- <script defer src="../Task_5/app.js"></script> -->
+    <script defer src="../Task_6/app.js"></script>
+    <title>Dom Practical - Tasks 1 to 6</title>
+  </head>
+  <body>
+    <a href="https://codepen.io/andrushka/pen/rNdQmOd">Codepen Link to animal pictures</a><br />
+    <a href="#">Completed tasks Codepen Link</a>
+    <main class="container">
+      <h1>Animal Filters</h1>
+      <p>You can filter the images by selecting a type. You can also enter keywords into the search bar.</p>
+      <form id="filters">
+        <fieldset>
+          <!-- Task 1 - Pick 4 animals - Create a HTML page containing a search input, 4 buttons (one for each animal), 1 more button labelled “Show All” - Give each button a class of “buttonFilter” -->
+          <!-- Task 2 - Add an attribute to each button animal =”tiger” (Show all, animal =”all”) -->
+          <input class="buttonFilter" type="radio" name="animalType" id="bear" value="bear" animal="bear">
+          <label for="bear">Bear</label>
+          <input class="buttonFilter" type="radio" name="animalType" id="dolphin" value="dolphin" animal="dolphin">
+          <label for="dolphin">Dolphin</label>
+          <input class="buttonFilter" type="radio" name="animalType" id="duck" value="duck" animal="duck">
+          <label for="duck">Duck</label>
+          <input class="buttonFilter" type="radio" name="animalType" id="giraffe" value="giraffe" animal="giraffe">
+          <label for="giraffe">Giraffe</label>
+          <input class="buttonFilter" type="radio" name="animalType" id="all" value="all" animal="all" checked="checked">
+          <label for="all" class="selected">Show All</label>
+        </fieldset>
+        <fieldset>
+          <input type="search" name="search" id="search">
+          <label for="search">Search</label>
+        </fieldset>
+      </form>
+
+      <div id="summary"></div>
+
+      <div id="results">
+        <!-- Task 1 - Add 16 containers with the animal images randomly spread out. Add a class that represents the animal class=”tiger” -->
+        <!-- Task 2 - Add a second class to each container that is called “imageFilter”. -->
+        <img animal="bear" class="imageFilter bear" src="https://images.pexels.com/photos/1068554/pexels-photo-1068554.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Close-Up Photography of Grizzly Bear">
+        <img animal="dolphin" class="imageFilter dolphin" src="https://images.pexels.com/photos/219945/pexels-photo-219945.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Black Whale in Water">
+        <img animal="duck" class="imageFilter duck" src="https://images.pexels.com/photos/157465/pexels-photo-157465.jpeg?auto=compress&cs=tinysrgb&h=350" alt="2 Yellow Ducklings Closeup Photography">
+        <img animal="dolphin" class="imageFilter dolphin" src="https://images.pexels.com/photos/966966/pexels-photo-966966.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Gray Dolphin on Blue Water">
+        <img animal="giraffe" class="imageFilter giraffe" src="https://images.pexels.com/photos/158832/giraffe-reticulated-giraffe-neck-beautiful-158832.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Brown Giraffe during Daytime">
+        <img animal="bear" class="imageFilter bear" src="https://images.pexels.com/photos/1083502/pexels-photo-1083502.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Brown Bear on Brown Wood">
+        <img animal="dolphin" class="imageFilter dolphin" src="https://images.pexels.com/photos/3354346/pexels-photo-3354346.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Dolphins Jumping Out from Ocean">
+        <img animal="bear" class="imageFilter bear" src="https://images.pexels.com/photos/598966/pexels-photo-598966.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Grayscale Photo of a Polar Bear Cub ">
+        <img animal="duck" class="imageFilter duck" src="https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Duckling on Black Soil during Daytime">
+        <img animal="giraffe" class="imageFilter giraffe" src="https://images.pexels.com/photos/797643/pexels-photo-797643.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Selective Focus Photography of Giraffe Head">
+        <img animal="bear" class="imageFilter bear" src="https://images.pexels.com/photos/1466592/pexels-photo-1466592.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Brown Bear On Body Of Water">
+        <img animal="giraffe" class="imageFilter giraffe" src="https://images.pexels.com/photos/2541407/pexels-photo-2541407.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Portrait photo of a giraffe isolated on blue background">
+        <img animal="duck" class="imageFilter duck" src="https://images.pexels.com/photos/833687/pexels-photo-833687.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Green and Gray Mallard Duck">
+        <img animal="dolphin" class="imageFilter dolphin" src="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Split-shot Photo of Dolphins Undewater ">
+        <img animal="duck" class="imageFilter duck" src="https://images.pexels.com/photos/162137/duckling-birds-yellow-fluffy-162137.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Yellow Duckling on Gray Dirt">
+        <img animal="giraffe" class="imageFilter giraffe" src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Close-Up Photography of Giraffe">
+      </div>
+    </main>
+  </body>
+</html>
